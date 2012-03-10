@@ -302,7 +302,7 @@ var CartoDB = CartoDB || {};
       // Destroy layers from the map
       google.maps.CartoDBLayer.prototype.destroy = function() {
         // First remove previous cartodb - tiles.
-        removeOldLayer(this.params.map,this.params.layer);
+        removeOldLayer(this.params);
 
         if (this.params.infowindow) {
           // Remove wax interaction
